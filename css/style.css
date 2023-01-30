@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    font-weight: bold;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.title h3 {
+    margin: 0 5px;
+}
+
+.title span {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #017b63;
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+header .logo {
+    width: 15%;
+    margin-right: 20px;
+}
+
+header .name a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Header End */
+
+/* Navigasi */
+nav {
+    background-color: #017b63;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul .active {
+    background-color: #06a182;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 25px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #06a182;
+}
+
+/* Navigasi End */
+
+/* Main */
+main {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .new_info {
+    width: 53%;
+    height: 490px;
+}
+
+main .new_info .info {
+    width: 100%;
+    position: relative;
+
+}
+
+main .new_info .info::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+main .new_info .title-new-info {
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    z-index: 99;
+}
+
+main .new_info .title-new-info p {
+    font-style: italic;
+}
+
+
+main .right-side {
+    width: 45%;
+}
+
+main .sides {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+main .right-side .side {
+    width: 49%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+main .right-side .side::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main .right-side .side .title-side {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    z-index: 99;
+}
+
+main .right-side .side .title-side p {
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+/* Main End */
+
+/* Profile */
+.profiles {
+    padding: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.profiles .for-profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profiles .profile {
+    width: 24%;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.profiles .for-profile .profile a {
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+}
+
+.profiles .for-profile .profile a:hover h2 {
+    color: rgb(58, 50, 50);
+    text-decoration: underline;
+}
+
+.profiles .title-profile p {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.profiles .title-profile {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Profile End */
+
+
+/* Content  */
+.content {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .left-content {
+    width: 65%;
+}
+
+.content .right-content {
+    width: 34%;
+}
+
+.content .others-info {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.content .others-info .picture-info {
+    width: 40%;
+}
+
+.content .others-info .descript-info {
+    width: 60%;
+    padding: 10px;
+}
+
+.content .others-info .descript-info span {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.content .others-info .descript-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.content .others-info .descript-info a:hover h1 {
+    text-decoration: underline;
+    color: rgb(58, 50, 50);
+}
+
+.right-content .sosmeds {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.right-content img {
+    box-shadow: 3px 3px 2px grey;
+}
+
+.right-content .sosmeds .sosmed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px grey;
+    height: 120px;
+}
+
+.right-content .sosmeds .sosmed a {
+    color: #000;
+}
+
+.right-content .sosmeds .sosmed .for-sosmed {
+    border: 1px solid #017b63;
+    width: 24%;
+    padding: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.7em;
+    box-shadow: 1px 1px 2px grey;
+}
+
+/* Content End */
+
+
+/* Footer  */
+footer {
+    width: 100%;
+    background-color: rgb(109, 108, 108);
+    padding: 20px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    margin-top: 50px;
+    position: relative;
+}
+
+footer .up {
+    background-color: #06a182;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+/* Footer End */
